@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-
 namespace Task1
 {
     public partial class Form1 : Form
@@ -31,16 +29,16 @@ namespace Task1
         {
             if (textBox_FIO.Text != "" & textBox_Speculity.Text != "" & byte.TryParse(textBox_Age.Text, out byte age))
             {
-                string fio=textBox_FIO.Text; string speculity=textBox_Speculity.Text;
+                string fio = textBox_FIO.Text; string speculity = textBox_Speculity.Text;
                 textBox_Age.Text = textBox_FIO.Text = textBox_Speculity.Text = "";
 
                 programmers.Add(new Programmer()
                 {
-                    FIO =fio,
+                    FIO = fio,
                     Age = age,
                     Speculity = speculity
                 });
-               
+
             }
         }
         private void Update(object sender, EventArgs e)

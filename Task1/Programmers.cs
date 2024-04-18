@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 
 namespace Task1
 {
@@ -21,8 +16,8 @@ namespace Task1
         }
         public void Delete(int index)
         {
-            if(list.Count>index)
-            list.RemoveAt(index);
+            if (list.Count > index)
+                list.RemoveAt(index);
             else throw new IndexOutOfRangeException("Индекс вышел за пределы");
             OnDelete?.Invoke(this, EventArgs.Empty);
         }

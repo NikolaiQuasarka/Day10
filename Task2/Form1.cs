@@ -18,7 +18,7 @@ namespace Task2
                 s = StrFunc.AddCount(s);
                 return s;
             };
-            richTextBox2.Text=func(richTextBox1.Text);
+            richTextBox2.Text = func(richTextBox1.Text);
         }
     }
 }

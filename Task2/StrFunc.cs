@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace Task2
 {
@@ -11,10 +6,11 @@ namespace Task2
     {
         public static string DeleteAllPunctuation(string str)
         {
-            string[] chars = new string[] {",",".","!","?"};
-            foreach (string c in chars) {
-               str= str.Replace(c, string.Empty);
-                    }
+            string[] chars = new string[] { ",", ".", "!", "?" };
+            foreach (string c in chars)
+            {
+                str = str.Replace(c, string.Empty);
+            }
             return str;
         }
         public static string DeleteEmptySpace(string str)
@@ -27,7 +23,7 @@ namespace Task2
         }
         public static string AddSymbols(string str)
         {
-            return "////"+str+"////";
+            return "////" + str + "////";
         }
         public static string AddCount(string str)
         {
@@ -36,7 +32,7 @@ namespace Task2
             {
                 strings[i] += $"[{strings[i].Length}]";
             }
-            return string.Join(' ',strings);
+            return string.Join(' ', strings);
         }
     }
 }
